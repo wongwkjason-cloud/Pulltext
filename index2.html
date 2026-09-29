@@ -21,20 +21,19 @@
 
     iframe {
       position: absolute;
-      /* Shifts the iframe up and left to strip out Google's document padding */
-      top: -100px;       /* Increase if you still see blank space at the top */
-      left: -100px;      /* Increase if you still see blank space on the left */
+      /* Shifts the iframe slightly up and left to reduce Google's document padding */
+      top: -15px;      
+      left: -20px;     
       
-      /* Expands dimensions so the table content isn't squeezed */
-      width: calc(100% + 120px);
-      height: calc(100% + 120px);
+      width: calc(100% + 40px);
+      height: calc(100% + 30px);
       border: none;
     }
   </style>
 </head>
 <body>
   <div class="crop-wrapper">
-    <iframe src="https://docs.google.com/document/d/e/2PACX-1vSlDXH1i9u9ZcTURfT0bocJZrd5HdTXkv1Be8dqfgTaf9QtsySovQIp9KNRdWkpOl1Vpnj1xSCBk97Q/pub?embedded=true"></iframe>
+    <iframe src="https://docs.google.com/document/d/e/2PACX-1vT3QLfXW9qN94GNEuqFt2vojR4UhTi0tcV1ecYOOEOp2CZFPJ_wHP5QbIw381uWp84HKEUE9XigAdtO/pub?embedded=true"></iframe>
   </div>
 </body>
 </html>
