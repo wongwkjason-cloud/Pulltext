@@ -9,16 +9,32 @@
       width: 100%;
       height: 100%;
       overflow: hidden;
+      background-color: #ffffff;
     }
-    iframe {
+
+    .crop-wrapper {
+      position: relative;
       width: 100%;
       height: 100%;
+      overflow: hidden;
+    }
+
+    iframe {
+      position: absolute;
+      /* Shifts the iframe up and left to crop out Google's default document padding */
+      top: -45px;      /* Adjust if you need to crop more/less from the top */
+      left: -45px;     /* Adjust if you need to crop more/less from the left */
+      
+      /* Expands the iframe dimensions to compensate for the negative shift */
+      width: calc(100% + 90px);
+      height: calc(100% + 90px);
       border: none;
     }
   </style>
 </head>
 <body>
-  <!-- Replace the src URL below with your "Publish to web" embed link from Step 1 -->
-  <iframe src="https://docs.google.com/document/d/e/2PACX-1vT3QLfXW9qN94GNEuqFt2vojR4UhTi0tcV1ecYOOEOp2CZFPJ_wHP5QbIw381uWp84HKEUE9XigAdtO/pub?embedded=true"></iframe>
+  <div class="crop-wrapper">
+    <iframe src="https://docs.google.com/document/d/e/2PACX-1vT3QLfXW9qN94GNEuqFt2vojR4UhTi0tcV1ecYOOEOp2CZFPJ_wHP5QbIw381uWp84HKEUE9XigAdtO/pub?embedded=true"></iframe>
+  </div>
 </body>
 </html>
