@@ -21,12 +21,13 @@
 
     iframe {
       position: absolute;
-      /* Adjusted offset to shift Google's document margin without pushing text off-screen */
-      top: -15px;
-      left: -20px;
+      /* Shifts the iframe up and left to strip out Google's document padding */
+      top: -60px;       /* Increase if you still see blank space at the top */
+      left: -60px;      /* Increase if you still see blank space on the left */
       
-      width: calc(100% + 40px);
-      height: calc(100% + 30px);
+      /* Expands dimensions so the table content isn't squeezed */
+      width: calc(100% + 120px);
+      height: calc(100% + 120px);
       border: none;
     }
   </style>
