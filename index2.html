@@ -21,12 +21,13 @@
 
     iframe {
       position: absolute;
-      /* Shifts the iframe slightly up and left to reduce Google's document padding */
-      top: -15px;      
-      left: -20px;     
+      /* Increased offsets to shift the inner document content to the top-left origin */
+      top: -100px;
+      left: -100px;
       
-      width: calc(100% + 40px);
-      height: calc(100% + 30px);
+      /* Expand dimensions so content isn't cut off on the right or bottom */
+      width: calc(100% + 200px);
+      height: calc(100% + 200px);
       border: none;
     }
   </style>
