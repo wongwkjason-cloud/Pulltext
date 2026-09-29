@@ -21,13 +21,12 @@
 
     iframe {
       position: absolute;
-      /* Shifts the iframe up and left to crop out Google's default document padding */
-      top: -45px;      /* Adjust if you need to crop more/less from the top */
-      left: -45px;     /* Adjust if you need to crop more/less from the left */
+      /* Smaller offset keeps the text inside the visible widget box */
+      top: -15px;      
+      left: -20px;     
       
-      /* Expands the iframe dimensions to compensate for the negative shift */
-      width: calc(100% + 90px);
-      height: calc(100% + 90px);
+      width: calc(100% + 40px);
+      height: calc(100% + 30px);
       border: none;
     }
   </style>
